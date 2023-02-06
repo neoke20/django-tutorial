@@ -1,9 +1,9 @@
-li {
+.questions-list li {
   margin: 26px 0;
   list-style: none;
 }
 
-li a {
+.questions-list li a {
   color: #333;
   text-decoration: none;
   padding: 8px;
@@ -11,7 +11,7 @@ li a {
   border-radius: 4px;
   box-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
 }
-li a:hover {
+.questions-list li a:hover {
   color: rgb(208, 207, 207);
 }
  body {
