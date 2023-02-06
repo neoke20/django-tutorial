@@ -1,5 +1,18 @@
+li {
+  margin: 26px 0;
+  list-style: none;
+}
+
 li a {
-  color: green;
+  color: #333;
+  text-decoration: none;
+  padding: 8px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 40%);
+}
+li a:hover {
+  color: rgb(208, 207, 207);
 }
  body {
   background: white url('images/banner.jpg') no-repeat;
