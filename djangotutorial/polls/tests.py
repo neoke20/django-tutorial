@@ -8,7 +8,7 @@ from .models import Question
 # Create your tests here.
 
 
-class QuestionModelTests(self):
+class QuestionModelTests(TestCase):
 
     def test_was_published_recently_with_future_question(self):
         time = timezone.now() + datetime.timedelta(days=30)
