@@ -63,3 +63,12 @@ class QuestionIndexViewTests(TestCase):
             response.contect['latest_question_list'],
             [question],
         )
+
+    def test_two_past_questions(self):
+        question1 = create_question(question_text="Past question 1.", days=-30)
+        question2 = create_question(question_text="Past question 2.", days=-5)
+        response = self.client.get(reverse('polls:index'))
+        self.assertQuerysetEqual(
+            response.context['latest_question_list'],
+            [question2, question1],
+        )
